@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "selective-rendering",
+  "version": "${version}",
+  "name": "Selective Rendering",
+  "description": "Selective Rendering for cool replays!",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Scubakay/selective-rendering"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/selective-rendering/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.scubakay.selectiverendering.SelectiveRenderingClient"
+    ]
+  },
+  "mixins": [
+    "selectiverendering.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
